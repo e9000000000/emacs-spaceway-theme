@@ -1,13 +1,8 @@
-;;; spaceway-theme.el --- Spaceway theme for GNU Emacs 24 (deftheme)
+;;; spaceway-theme.el --- Spaceway theme for GNU Emacs 29 (deftheme)
+;; Version: 2.0
 
-;; Author: Mark Tran <mark.tran@gmail.com>
-;; URL: http://github.com/marktran/color-theme-spaceway
-;; Package-Version: 20180214.1624
-;; Package-Commit: bf724ce7806a738d2043544061e5f9bbfc56e674
-;; Version: 1.2.9
-
-;; Inspired by jellybeans: http://www.vim.org/scripts/script.php?script_id=2555.
-;; now stores by e9000000000: https://github.com/e9000000000/emacs-spaceway-theme
+;; get it from deleted repository http://github.com/marktran/color-theme-spaceway
+;; now maintained by e9000000000: https://github.com/e9000000000/emacs-spaceway-theme
 (deftheme spaceway "The spaceway color theme")
 
 (let ((class '((class color) (min-colors 89)))
@@ -235,7 +230,24 @@
        `(web-mode-symbol-face ((,class (:foreground ,spaceway-green-1))))
        `(which-key-group-description-face ((,class (:foreground ,spaceway-grey-0))))
        `(which-key-key-face ((,class (:foreground ,spaceway-green-0))))
-       `(whitespace-trailing ((,class (:background ,spaceway-red-1))))))
+       `(whitespace-trailing ((,class (:background ,spaceway-red-1))))
+
+       `(vterm-color-black ((,class (:foreground ,spaceway-bg :background ,spaceway-bg))))
+       `(vterm-color-red ((,class (:foreground ,spaceway-red-1 :background ,spaceway-red-1))))
+       `(vterm-color-green ((,class (:foreground ,spaceway-green-0 :background ,spaceway-green-0))))
+       `(vterm-color-yellow ((,class (:foreground ,spaceway-yellow-0 :background ,spaceway-yellow-0))))
+       `(vterm-color-blue ((,class (:foreground ,spaceway-purple-0 :background ,spaceway-purple-0))))
+       `(vterm-color-magenta ((,class (:foreground ,spaceway-grey-0 :background ,spaceway-grey-0))))
+       `(vterm-color-cyan ((,class (:foreground ,spaceway-grey-0 :background ,spaceway-grey-0))))
+       `(vterm-color-white ((,class (:foreground ,spaceway-fg :background ,spaceway-fg))))
+       `(vterm-color-bright-black ((,class (:foreground ,spaceway-grey-5 :background ,spaceway-grey-5))))
+       `(vterm-color-bright-red ((,class (:foreground ,spaceway-red-1 :background ,spaceway-red-1))))
+       `(vterm-color-bright-green ((,class (:foreground ,spaceway-green-0 :background ,spaceway-green-0))))
+       `(vterm-color-bright-yellow ((,class (:foreground ,spaceway-yellow-0 :background ,spaceway-yellow-0))))
+       `(vterm-color-bright-blue ((,class (:foreground ,spaceway-purple-0 :background ,spaceway-purple-0))))
+       `(vterm-color-bright-magenta ((,class (:foreground ,spaceway-grey-0 :background ,spaceway-grey-0))))
+       `(vterm-color-bright-cyan ((,class (:foreground ,spaceway-grey-0 :background ,spaceway-grey-0))))
+       `(vterm-color-bright-white ((,class (:foreground ,spaceway-fg :background ,spaceway-fg))))))
 
 ;;;###autoload
 (when load-file-name
