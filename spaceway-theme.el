@@ -1,3 +1,4 @@
+;; -*- lexical-binding: nil; -*-
 ;;; spaceway-theme.el --- Spaceway theme for GNU Emacs 29 (deftheme)
 ;; Version: 2.0
 
